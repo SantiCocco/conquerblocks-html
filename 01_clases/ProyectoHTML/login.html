@@ -4,10 +4,10 @@
 <head>
 
     <!-- Título para el navegador y los buscadores -->
-    <title>Proyecto Conquer</title>
+    <title>Proyecto Conquer - Login</title>
 
     <!-- Descripción de la página para los buscadores -->
-    <meta name="description" content="Proyecto HTML basado en conquerBlocks">
+    <meta name="Login" content="Proyecto HTML basado en conquerBlocks">
 
     <!-- Palabras clave para los buscadores -->
     <meta name="keywords" content="p, h1, h2, h3, h4, h5">
@@ -46,7 +46,24 @@
     </header>
 
     <main>
+        <h1>Inicio de sesión</h1>
+        <form action="/registrar-cliente/" name="registro" method="post" autocomplete="off" enctype="multipart/form-data">
+        <input type="hidden" name="company" value="ConquerBlocks">
     
+        <fieldset>
+            <legend>Ingrese su usuario y contraseña</legend>
+            <p>
+            Usuario 
+            <input type="email" name="user" placeholder="" size="30" autocomplete="off" required>
+            </p>
+            <p>
+            Contraseña
+            <input type="password" name="password" placeholder="" size="27" autocomplete="off" required><br />
+            </p>
+        </fieldset>
+    
+        <button>Iniciar sesión</button>
+        </form>
     </main>
 
     <hr>

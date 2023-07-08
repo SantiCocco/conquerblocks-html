@@ -4,10 +4,10 @@
 <head>
 
     <!-- Título para el navegador y los buscadores -->
-    <title>Proyecto Conquer</title>
+    <title>Proyecto Conquer - register</title>
 
     <!-- Descripción de la página para los buscadores -->
-    <meta name="description" content="Proyecto HTML basado en conquerBlocks">
+    <meta name="Register" content="Proyecto HTML basado en conquerBlocks">
 
     <!-- Palabras clave para los buscadores -->
     <meta name="keywords" content="p, h1, h2, h3, h4, h5">
@@ -46,7 +46,57 @@
     </header>
 
     <main>
+        <h1>Formulario de registro</h1>
+        <form action="/registrar-cliente/" name="registro" method="post" autocomplete="off" enctype="multipart/form-data">
+        <input type="hidden" name="company" value="ConquerBlocks">
     
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <p>
+            Nombre 
+            <input type="text" name="nombre" placeholder="José" size="15" autocomplete="off" required>
+            </p>
+            <p>
+            Apellidos
+            <input type="text" name="apellidos" placeholder="Pérez López" size="25" autocomplete="off" required><br />
+            </p>
+            <p>
+            Fecha de nacimiento
+            <input type="date" name="fechaNacimiento" size="25" autocomplete="off" required><br />
+            </p>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Contacto</legend>
+            <p>
+            Email
+            <input type="email" name="email" size="25" placeholder="joseperez@gmail.com" autocomplete="off" required><br />
+            </p>
+            <p>
+            Dirección
+            <input type="text" name="dirección" placeholder="Av. Habaneras 34, puerta 2" size="40" autocomplete="off" required>
+            </p>
+            <p>
+            Página web
+            <input type="url" name="pagina" placeholder="www.tupagina.com" size="30" autocomplete="off">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mas información</legend>
+            <p>
+            Sube una foto de perfil
+            <input type="file" name="foto">
+            </p>
+            <p>
+            <label for="bio">Biografía</label><br>
+            <textarea name="bio" id="bio" cols="60" rows="5" placeholder="Escribe una breve biografía aqui..."></textarea>
+            </p>
+        </fieldset>
+    
+        <button>Enviar</button>
+        <input type="reset" value="Borrar el formulario">
+        </form>
     </main>
 
     <hr>
